@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# install required packages
+cwd=$(dirname "${BASH_SOURCE[0]}")
+packages_path=$(realpath "$cwd/../../packages/.aptfile")
+xargs -a <(awk '! /^ *(#|$)/' "$packages_path") -r -- sudo apt-get install -y
+
