@@ -1,7 +1,11 @@
 #!/bin/bash
 
+ALACRITTY_SETUP_HOME=$(realpath "~/.local/share/applications")
+
 # install required packages
 cwd=$(dirname "${BASH_SOURCE[0]}")
 packages_path=$(realpath "$cwd/../../packages/.aptfile")
 xargs -a <(awk '! /^ *(#|$)/' "$packages_path") -r -- sudo apt-get install -y
+
+# build alacritty
 
