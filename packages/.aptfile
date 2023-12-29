@@ -7,3 +7,5 @@ libxcb-xfixes0-dev
 libxkbcommon-dev
 libegl1-mesa-dev
 python3
+ripgrep
+fd-find
