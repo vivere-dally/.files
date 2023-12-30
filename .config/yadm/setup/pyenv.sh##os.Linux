@@ -4,11 +4,6 @@ sudo apt install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline
 
 curl https://pyenv.run | bash
 
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
-
 zsh
 
 pyenv install 3.12
