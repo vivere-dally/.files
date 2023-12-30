@@ -1,0 +1,21 @@
+#!/bin/bash
+
+sudo apt install wl-clipboard ripgrep fd-find
+
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage --appimage-extract
+sudo mv ./squashfs-root /usr/local/share/
+sudo ln -s /usr/local/share/squashfs-root/AppRun /usr/bin/nvim
+rm ./nvim.appimage
+
+# TODO - not sure about these
+# CUSTOM_NVIM_PATH=/usr/local/bin/nvim.appimage
+# Set the above with the correct path, then run the rest of the commands:
+# set -u
+# sudo update-alternatives --install /usr/bin/ex ex "${CUSTOM_NVIM_PATH}" 110
+# sudo update-alternatives --install /usr/bin/vi vi "${CUSTOM_NVIM_PATH}" 110
+# sudo update-alternatives --install /usr/bin/view view "${CUSTOM_NVIM_PATH}" 110
+# sudo update-alternatives --install /usr/bin/vim vim "${CUSTOM_NVIM_PATH}" 110
+# sudo update-alternatives --install /usr/bin/vimdiff vimdiff "${CUSTOM_NVIM_PATH}" 110
+
