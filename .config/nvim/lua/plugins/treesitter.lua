@@ -18,6 +18,7 @@ return {
         end,
       },
       { 'nvim-treesitter/nvim-treesitter-textobjects' },
+      { 'windwp/nvim-ts-autotag' },
     },
     event = { 'BufReadPre', 'BufNewFile' },
     build = ':TSUpdate',
@@ -89,8 +90,12 @@ return {
           },
         },
       },
+      autotag = {
+        enable = true,
+      },
     },
     config = function(_, opts)
+      require('nvim-ts-autotag').setup()
       require('nvim-treesitter.configs').setup(opts)
 
       local parser_config = require('nvim-treesitter.parsers').get_parser_configs()
