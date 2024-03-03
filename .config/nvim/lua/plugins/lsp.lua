@@ -18,6 +18,7 @@ return {
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/cmp-nvim-lua' },
     { 'windwp/nvim-autopairs' },
+    { 'jsongerber/nvim-px-to-rem', config = true },
 
     -- Snippets
     { 'L3MON4D3/LuaSnip' },
