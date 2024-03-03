@@ -5,6 +5,10 @@ pkg="~/setup_packages"
 git clone --depth 1 https://github.com/junegunn/fzf.git $pkg/.fzf
 $pkg/.fzf/install
 
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup override set stable
+rustup update stable
+
 cwd=$(dirname "${BASH_SOURCE[0]}")
 system_type=$(uname -s)
 case $system_type in
