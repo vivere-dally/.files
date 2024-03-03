@@ -1,5 +1,10 @@
 #!/bin/bash
 
+pkg="~/setup_packages"
+
+git clone --depth 1 https://github.com/junegunn/fzf.git $pkg/.fzf
+$pkg/.fzf/install
+
 cwd=$(dirname "${BASH_SOURCE[0]}")
 system_type=$(uname -s)
 case $system_type in

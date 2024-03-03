@@ -7,4 +7,5 @@ cwd=$(dirname "${BASH_SOURCE[0]}")
 /bin/bash $cwd/setup/php.sh
 /bin/bash $cwd/setup/alacritty.sh
 /bin/bash $cwd/setup/nvim.sh
+/bin/bash $cwd/setup/tmux.sh
 
