@@ -5,6 +5,7 @@ fi
 
 export EDITOR=nvim
 export GIT_EDITOR=nvim
+export FZF_BASE=~/setup_packages/fzf
 
 #--------------------------------------------------------------------------
 # oh-my-zsh
@@ -22,6 +23,8 @@ zstyle ':completion:*:descriptions' format %d
 zstyle ':completion:*:descriptions' format %B%d%b
 zstyle ':completion:*:complete:(cd|pushd):*' tag-order \
     'local-directories named-directories'
+
+plugins=(git fzf zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
