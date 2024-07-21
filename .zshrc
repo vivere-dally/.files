@@ -6,6 +6,7 @@ fi
 export EDITOR=nvim
 export GIT_EDITOR=nvim
 export FZF_BASE=~/setup_packages/fzf
+export TERM=screen-256color
 
 #--------------------------------------------------------------------------
 # oh-my-zsh
@@ -52,4 +53,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:/usr/local/android-studio/bin
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
