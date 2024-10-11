@@ -5,7 +5,9 @@ fi
 
 export EDITOR=nvim
 export GIT_EDITOR=nvim
-export FZF_BASE=~/setup_packages/fzf
+
+echo "hi all"
+
 export TERM=screen-256color
 
 #--------------------------------------------------------------------------
