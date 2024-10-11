@@ -5,9 +5,6 @@ fi
 
 export EDITOR=nvim
 export GIT_EDITOR=nvim
-
-echo "hi all"
-
 export TERM=screen-256color
 
 #--------------------------------------------------------------------------
