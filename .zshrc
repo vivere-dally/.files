@@ -5,8 +5,8 @@ fi
 
 export EDITOR=nvim
 export GIT_EDITOR=nvim
-
 export TERM=screen-256color
+
 
 #--------------------------------------------------------------------------
 # oh-my-zsh
